@@ -4,8 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc -p tsconfig.json",
-  "start:dev": "PORT=3001 ts-node-dev --respawn --transpile-only src/main.ts"
+    "build": "cd portfolio-fullstack/backend && npm install && npm run build",
+    "start": "cd portfolio-fullstack/backend && npm run start:prod",
+    "start:dev": "cd portfolio-fullstack/backend && PORT=3001 ts-node-dev --respawn --transpile-only src/main.ts"
   },
   "keywords": [],
   "author": "",
