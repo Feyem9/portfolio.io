@@ -3,7 +3,7 @@ services:
     name: portfolio-backend
     env: node
   buildCommand: git submodule update --init --recursive && cd portfolio-fullstack/backend && npm install && npm run build
-  startCommand: cd portfolio-fullstack/backend && npm run start:prod
+  startCommand: cd portfolio-fullstack/backend && node dist/main.js
     envVars:
       - key: NODE_ENV
         value: production
